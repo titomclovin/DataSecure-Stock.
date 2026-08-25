@@ -1,0 +1,15 @@
+// Servidor principal Node.js + Express (Evidencia de arquitectura)
+const express = require('express');
+const app = express();
+
+// Middlewares de seguridad y parseo
+app.use(express.json()); // Sanitización inicial de JSON
+
+app.get('/', (req, res) => {
+    res.json({ mensaje: "Bienvenido a la API REST de DataSecure Stock." });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor seguro corriendo en el puerto ${PORT}.`);
+});

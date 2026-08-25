@@ -1,0 +1,21 @@
+// Middleware para validación de Tokens y Roles (Evidencia de Ciberseguridad)
+const jwt = require('jsonwebtoken');
+
+const verificarToken = (req, res, next) => {
+    const token = req.headers['x-access-token'];
+
+    if (!token) {
+        return res.status(403).json({ mensaje: "¡No se ha proporcionado ningún token!" });
+    }
+
+    jwt.verify(token, process.env.SECRET, (err, decoded) => {
+        if (err) {
+            return res.status(401).json({ mensaje: "¡No autorizado! Token inválido." });
+        }
+        req.userId = decoded.id;
+        req.userRol = decoded.rol;
+        next();
+    });
+};
+
+module.exports = { verificarToken };
