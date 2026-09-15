@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditoria y alertas | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menu principal"></nav>
+    <main class="contenido">
+      <h2>Auditoria y alertas de ciberseguridad</h2>
+      <p class="bajada">Registro append-only de la actividad del sistema y hallazgos del motor analitico.</p>
+      <div class="aviso" id="aviso" hidden></div>
+      <section class="panel">
+        <h3>Alertas detectadas</h3>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Deteccion</th><th>Amenaza</th><th>Severidad</th><th>Descripcion</th><th>Origen</th><th>Estado</th><th>Accion</th></tr></thead>
+            <tbody id="tb-alertas"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="panel">
+        <h3>Bitacora de eventos</h3>
+        <div class="barra-acciones">
+          <div class="campo"><label for="f-exito">Resultado</label>
+            <select id="f-exito"><option value="">Todos</option><option value="false">Solo fallidos</option><option value="true">Solo exitosos</option></select></div>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Fecha</th><th>Usuario</th><th>Accion</th><th>Recurso</th><th>Metodo</th><th class="numero">HTTP</th><th>IP</th><th>Resultado</th></tr></thead>
+            <tbody id="tb-logs"></tbody>
+          </table>
+        </div>
+        <p class="vacio" id="paginacion"></p>
+      </section>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/auditoria.js"></script>
+</body>
+</html>

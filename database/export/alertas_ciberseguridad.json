@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "6aa0c250af13d54d2c48321f",
+    "tipo_amenaza": "Fuerza bruta sobre credenciales",
+    "severidad": "Alta",
+    "descripcion": "7 intentos de acceso fallidos desde 45.190.22.114 en 10 minutos",
+    "ip_origen": "45.190.22.114",
+    "id_usuario": null,
+    "evidencia": {
+      "intentos": 7,
+      "cuentas_probadas": [
+        "admin@tecnosur.cl",
+        "root@tecnosur.cl"
+      ],
+      "ventana_min": 10
+    },
+    "resuelta": false,
+    "fecha_deteccion": "2026-09-06T02:20:00.440Z"
+  },
+  {
+    "_id": "6aa0c250af13d54d2c483220",
+    "tipo_amenaza": "Intento de acceso fuera de perfil",
+    "severidad": "Media",
+    "descripcion": "El usuario bodega2@tecnosur.cl intento operar sobre /api/usuarios sin privilegios para ese recurso",
+    "ip_origen": "190.15.34.20",
+    "id_usuario": "6aa0c250af13d54d2c482cd0",
+    "evidencia": {
+      "recurso": "/api/usuarios",
+      "metodo": "GET"
+    },
+    "resuelta": true,
+    "fecha_deteccion": "2026-09-03T02:20:00.440Z"
+  },
+  {
+    "_id": "6aa0c277af13d54d2c4832d8",
+    "tipo_amenaza": "Fuerza bruta sobre credenciales",
+    "severidad": "Alta",
+    "descripcion": "7 intentos de acceso fallidos desde ::1 en 10 minutos",
+    "ip_origen": "::1",
+    "id_usuario": null,
+    "evidencia": {
+      "intentos": 7,
+      "cuentas_probadas": [
+        "admin@tecnosur.cl"
+      ],
+      "ventana_min": 10
+    },
+    "resuelta": false,
+    "fecha_deteccion": "2026-09-09T02:20:39.889Z"
+  }
+]

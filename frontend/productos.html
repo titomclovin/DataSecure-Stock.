@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo de productos | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menu principal"></nav>
+    <main class="contenido">
+      <h2>Catalogo de productos</h2>
+      <p class="bajada">Alta, consulta, modificacion y baja del inventario. El perfil Operador solo tiene lectura.</p>
+      <div class="aviso" id="aviso" hidden></div>
+      <section class="panel">
+        <div class="barra-acciones">
+          <div class="campo">
+            <label for="buscar">Buscar por nombre</label>
+            <input type="search" id="buscar" placeholder="Notebook, disco, monitor...">
+          </div>
+          <button type="button" id="btn-nuevo">Nuevo producto</button>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead>
+              <tr><th>SKU</th><th>Producto</th><th>Categoria</th><th>Proveedor</th>
+                  <th class="numero">Stock</th><th class="numero">Precio</th><th>Estado</th><th>Acciones</th></tr>
+            </thead>
+            <tbody id="tb-productos"></tbody>
+          </table>
+        </div>
+        <p class="vacio" id="paginacion"></p>
+      </section>
+
+      <dialog id="dlg-producto">
+        <header id="dlg-titulo">Nuevo producto</header>
+        <form id="form-producto" method="dialog">
+          <div class="aviso aviso-error" id="dlg-aviso" hidden></div>
+          <div class="campo"><label for="f-sku">SKU</label>
+            <input type="text" id="f-sku" required pattern="[A-Za-z0-9\-]{3,20}" placeholder="NB-1010"></div>
+          <div class="campo"><label for="f-nombre">Nombre</label>
+            <input type="text" id="f-nombre" required minlength="3" maxlength="120"></div>
+          <div class="campo"><label for="f-categoria">Categoria</label>
+            <select id="f-categoria" required></select></div>
+          <div class="campo"><label for="f-proveedor">Proveedor</label>
+            <select id="f-proveedor" required></select></div>
+          <div class="campo"><label for="f-stock">Stock inicial</label>
+            <input type="number" id="f-stock" min="0" value="0" required></div>
+          <div class="campo"><label for="f-critico">Stock critico</label>
+            <input type="number" id="f-critico" min="0" value="5" required></div>
+          <div class="campo"><label for="f-precio">Precio (CLP)</label>
+            <input type="number" id="f-precio" min="0" step="1" required></div>
+          <footer>
+            <button type="button" class="boton-secundario" id="btn-cancelar">Cancelar</button>
+            <button type="submit" id="btn-guardar">Guardar</button>
+          </footer>
+        </form>
+      </dialog>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/productos.js"></script>
+</body>
+</html>

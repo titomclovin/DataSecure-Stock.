@@ -1,0 +1,341 @@
+/* =============================================================
+   DataSecure Stock - hoja de estilos unica
+   CSS3 nativo (Grid + Flexbox). Sin Bootstrap, Tailwind ni
+   plantillas de terceros. Enfoque mobile-first: el bloque base
+   describe el telefono y las media queries amplian a tablet y
+   escritorio.
+   ============================================================= */
+
+:root {
+  --fondo:            #eef1f4;
+  --superficie:       #ffffff;
+  --borde:            #d7dde3;
+  --tinta:            #1c2530;
+  --tinta-suave:      #5c6874;
+  --marca:            #0f3d3e;
+  --marca-clara:      #17706f;
+  --acento:           #c8892b;
+  --exito:            #1f7a45;
+  --peligro:          #a32626;
+  --aviso:            #b4761a;
+  --radio:            10px;
+  --sombra:           0 2px 8px rgba(28, 37, 48, .10);
+  --fuente:           "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--fuente);
+  background: var(--fondo);
+  color: var(--tinta);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a { color: var(--marca-clara); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ------------------------------------------------ acceso (login) ------ */
+.pantalla-acceso {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  place-items: center;
+  padding: 1.25rem;
+  background: linear-gradient(160deg, #0f3d3e 0%, #12494a 45%, #1c2530 100%);
+}
+
+.tarjeta-acceso {
+  width: 100%;
+  max-width: 420px;
+  background: var(--superficie);
+  border-radius: var(--radio);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .28);
+  overflow: hidden;
+}
+
+.tarjeta-acceso header {
+  background: var(--marca);
+  color: #fff;
+  padding: 1.75rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.tarjeta-acceso header h1 { font-size: 1.5rem; letter-spacing: .3px; }
+.tarjeta-acceso header p  { font-size: .85rem; opacity: .85; margin-top: .35rem; }
+
+.tarjeta-acceso form { padding: 1.5rem; display: grid; gap: 1rem; }
+
+/* ---------------------------------------------------- formularios ----- */
+.campo { display: grid; gap: .35rem; }
+.campo label { font-size: .82rem; font-weight: 600; color: var(--tinta-suave); }
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: .95rem;
+  padding: .65rem .75rem;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--tinta);
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--marca-clara);
+  outline-offset: 1px;
+  border-color: var(--marca-clara);
+}
+
+input:invalid:not(:placeholder-shown) { border-color: var(--peligro); }
+
+button, .boton {
+  font-family: inherit;
+  font-size: .92rem;
+  font-weight: 600;
+  padding: .65rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--marca);
+  color: #fff;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+
+button:hover, .boton:hover { background: var(--marca-clara); text-decoration: none; }
+button:disabled { background: #9aa5ae; cursor: not-allowed; }
+
+.boton-secundario { background: #55636f; }
+.boton-secundario:hover { background: #6c7a86; }
+.boton-peligro { background: var(--peligro); }
+.boton-peligro:hover { background: #c53434; }
+.boton-menor { padding: .35rem .6rem; font-size: .78rem; }
+
+/* -------------------------------------------------------- avisos ----- */
+.aviso {
+  padding: .7rem .9rem;
+  border-radius: 6px;
+  font-size: .87rem;
+  border-left: 4px solid;
+}
+.aviso[hidden] { display: none; }
+.aviso-error   { background: #fbeaea; border-color: var(--peligro); color: #7d1d1d; }
+.aviso-ok      { background: #e8f5ee; border-color: var(--exito);   color: #16552f; }
+.aviso-info    { background: #eef3f7; border-color: #55636f;        color: #364049; }
+
+/* ------------------------------------------------------ estructura --- */
+.disposicion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.barra-superior {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--marca);
+  color: #fff;
+  padding: .8rem 1rem;
+}
+
+.barra-superior .marca { font-weight: 700; letter-spacing: .3px; }
+.barra-superior .marca span { display: block; font-size: .7rem; font-weight: 400; opacity: .8; }
+
+.sesion { display: flex; align-items: center; gap: .75rem; font-size: .82rem; }
+.etiqueta-rol {
+  background: var(--acento);
+  color: #22201a;
+  border-radius: 999px;
+  padding: .15rem .6rem;
+  font-weight: 700;
+  font-size: .72rem;
+}
+
+.alternar-menu {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .5);
+  padding: .3rem .55rem;
+  font-size: .9rem;
+}
+
+.menu-lateral {
+  background: #17212b;
+  padding: .75rem;
+  display: none;
+}
+.menu-lateral.abierto { display: block; }
+.menu-lateral ul { list-style: none; display: grid; gap: .2rem; }
+.menu-lateral a {
+  display: block;
+  color: #cfd8e0;
+  padding: .6rem .7rem;
+  border-radius: 6px;
+  font-size: .9rem;
+}
+.menu-lateral a:hover { background: #22303d; color: #fff; text-decoration: none; }
+.menu-lateral a.activo { background: var(--marca-clara); color: #fff; font-weight: 600; }
+.menu-lateral .grupo {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #7d8b98;
+  padding: .8rem .7rem .3rem;
+}
+
+.contenido { padding: 1rem; }
+.contenido > h2 { font-size: 1.25rem; margin-bottom: .25rem; }
+.contenido > .bajada { color: var(--tinta-suave); font-size: .88rem; margin-bottom: 1rem; }
+
+/* ------------------------------------------------------- tarjetas ---- */
+.rejilla-indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .85rem;
+  margin-bottom: 1.25rem;
+}
+
+.indicador {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: .9rem 1rem;
+  box-shadow: var(--sombra);
+}
+.indicador .rotulo { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tinta-suave); }
+.indicador .cifra  { font-size: 1.7rem; font-weight: 700; margin-top: .2rem; }
+.indicador .pie    { font-size: .76rem; color: var(--tinta-suave); }
+.indicador.critico .cifra { color: var(--peligro); }
+.indicador.atencion .cifra { color: var(--aviso); }
+
+.panel {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+.panel h3 { font-size: 1rem; margin-bottom: .75rem; }
+
+.barra-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: end;
+  margin-bottom: .9rem;
+}
+.barra-acciones .campo { flex: 1 1 180px; }
+
+/* --------------------------------------------------------- tablas ---- */
+.tabla-envoltura { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: .87rem; min-width: 560px; }
+thead th {
+  background: #f2f5f8;
+  text-align: left;
+  padding: .6rem .7rem;
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--tinta-suave);
+  border-bottom: 2px solid var(--borde);
+  white-space: nowrap;
+}
+tbody td { padding: .6rem .7rem; border-bottom: 1px solid #e8ecf0; vertical-align: middle; }
+tbody tr:hover { background: #f7f9fb; }
+td.numero, th.numero { text-align: right; }
+
+.marca-estado {
+  display: inline-block;
+  padding: .12rem .5rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+}
+.estado-ok      { background: #e2f2e9; color: #16552f; }
+.estado-critico { background: #fbe6e6; color: #7d1d1d; }
+.estado-aviso   { background: #fbf1de; color: #7a4f10; }
+.estado-neutro  { background: #e9edf1; color: #46525d; }
+
+/* --------------------------------------------------- grafico barras -- */
+.grafico { display: grid; gap: .45rem; }
+.grafico .fila { display: grid; grid-template-columns: 150px 1fr 60px; align-items: center; gap: .5rem; font-size: .8rem; }
+.grafico .pista { background: #eef1f4; border-radius: 4px; height: 16px; overflow: hidden; }
+.grafico .relleno { height: 100%; background: var(--marca-clara); }
+.grafico .fila.salida .relleno { background: var(--acento); }
+
+/* ------------------------------------------------- notificaciones ---- */
+.pila-notificaciones {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  gap: .5rem;
+  max-width: 320px;
+  z-index: 50;
+}
+.notificacion {
+  background: #17212b;
+  color: #fff;
+  border-left: 4px solid var(--acento);
+  border-radius: 6px;
+  padding: .65rem .8rem;
+  font-size: .82rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .28);
+}
+.notificacion strong { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+
+/* ------------------------------------------------------- modales ----- */
+dialog {
+  border: none;
+  border-radius: var(--radio);
+  padding: 0;
+  width: min(94vw, 460px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .32);
+}
+dialog::backdrop { background: rgba(15, 22, 30, .55); }
+dialog header { background: var(--marca); color: #fff; padding: .8rem 1rem; font-weight: 600; }
+dialog form { padding: 1rem; display: grid; gap: .8rem; }
+dialog footer { display: flex; justify-content: flex-end; gap: .6rem; }
+
+.vacio { padding: 1.5rem; text-align: center; color: var(--tinta-suave); font-size: .9rem; }
+
+.enlace-pie { text-align: center; font-size: .84rem; }
+.grupo-marca { display: flex; align-items: center; gap: .75rem; }
+
+/* =====================  TABLET  ===================== */
+@media (min-width: 600px) {
+  .contenido { padding: 1.5rem; }
+  .rejilla-indicadores { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .tarjeta-acceso form { padding: 1.75rem; }
+}
+
+/* =====================  ESCRITORIO  ===================== */
+@media (min-width: 900px) {
+  .disposicion {
+    grid-template-columns: 232px 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .menu-lateral { display: block; grid-row: 2; }
+  .alternar-menu { display: none; }
+  .contenido { grid-column: 2; padding: 1.75rem 2rem; }
+  table { min-width: 0; }
+}
+
+@media (min-width: 1280px) {
+  .contenido { padding: 2rem 2.75rem; }
+}
+
+/* =====================  IMPRESION  ===================== */
+@media print {
+  .menu-lateral, .barra-superior, .barra-acciones, .pila-notificaciones { display: none !important; }
+  body { background: #fff; }
+  .panel { box-shadow: none; border-color: #999; }
+}
