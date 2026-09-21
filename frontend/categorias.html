@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menu principal"></nav>
+    <main class="contenido">
+      <h2>Categorias de inventario</h2>
+      <p class="bajada">Clasificacion del catalogo. La modificacion esta reservada al perfil Administrador.</p>
+      <div class="aviso" id="aviso" hidden></div>
+      <section class="panel">
+        <div class="barra-acciones">
+          <div class="campo"><label for="buscar">Buscar</label><input type="search" id="buscar" placeholder="Nombre de categoria"></div>
+          <button type="button" id="btn-nuevo">Nueva categoria</button>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Categoria</th><th>Descripcion</th><th>Estado</th><th>Acciones</th></tr></thead>
+            <tbody id="tb-categorias"></tbody>
+          </table>
+        </div>
+      </section>
+      <dialog id="dlg-categoria">
+        <header id="dlg-titulo">Nueva categoria</header>
+        <form id="form-categoria" method="dialog">
+          <div class="aviso aviso-error" id="dlg-aviso" hidden></div>
+          <div class="campo"><label for="f-nombre">Nombre</label>
+            <input type="text" id="f-nombre" required minlength="3" maxlength="60"></div>
+          <div class="campo"><label for="f-descripcion">Descripcion</label>
+            <input type="text" id="f-descripcion" maxlength="240"></div>
+          <footer>
+            <button type="button" class="boton-secundario" id="btn-cancelar">Cancelar</button>
+            <button type="submit">Guardar</button>
+          </footer>
+        </form>
+      </dialog>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/categorias.js"></script>
+</body>
+</html>

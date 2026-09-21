@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuentas de usuario | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menu principal"></nav>
+    <main class="contenido">
+      <h2>Cuentas de usuario</h2>
+      <p class="bajada">Administracion de perfiles y privilegios. Las contrasenas se guardan cifradas con bcrypt.</p>
+      <div class="aviso" id="aviso" hidden></div>
+      <section class="panel">
+        <div class="barra-acciones">
+          <button type="button" id="btn-nuevo">Nueva cuenta</button>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Nombre</th><th>Correo</th><th>Perfil</th><th>Estado</th><th>Creada</th><th>Acciones</th></tr></thead>
+            <tbody id="tb-usuarios"></tbody>
+          </table>
+        </div>
+      </section>
+      <dialog id="dlg-usuario">
+        <header id="dlg-titulo">Nueva cuenta</header>
+        <form id="form-usuario" method="dialog">
+          <div class="aviso aviso-error" id="dlg-aviso" hidden></div>
+          <div class="campo"><label for="f-nombre">Nombre completo</label>
+            <input type="text" id="f-nombre" required minlength="3" maxlength="80"></div>
+          <div class="campo"><label for="f-email">Correo electronico</label>
+            <input type="email" id="f-email" required></div>
+          <div class="campo"><label for="f-password">Contrasena</label>
+            <input type="password" id="f-password" minlength="8" required></div>
+          <div class="campo"><label for="f-rol">Perfil</label>
+            <select id="f-rol"><option>Operador</option><option>Administrador</option></select></div>
+          <footer>
+            <button type="button" class="boton-secundario" id="btn-cancelar">Cancelar</button>
+            <button type="submit">Guardar</button>
+          </footer>
+        </form>
+      </dialog>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/usuarios.js"></script>
+</body>
+</html>

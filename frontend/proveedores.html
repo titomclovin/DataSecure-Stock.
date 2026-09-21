@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proveedores | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menu principal"></nav>
+    <main class="contenido">
+      <h2>Directorio de proveedores</h2>
+      <p class="bajada">Origen de los articulos tecnologicos y nivel de confianza comercial asignado.</p>
+      <div class="aviso" id="aviso" hidden></div>
+      <section class="panel">
+        <div class="barra-acciones">
+          <div class="campo"><label for="buscar">Buscar</label><input type="search" id="buscar" placeholder="Razon social"></div>
+          <button type="button" id="btn-nuevo">Nuevo proveedor</button>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Razon social</th><th>RUT</th><th>Contacto</th><th>Correo</th>
+              <th class="numero">Confianza</th><th>Estado</th><th>Acciones</th></tr></thead>
+            <tbody id="tb-proveedores"></tbody>
+          </table>
+        </div>
+      </section>
+      <dialog id="dlg-proveedor">
+        <header id="dlg-titulo">Nuevo proveedor</header>
+        <form id="form-proveedor" method="dialog">
+          <div class="aviso aviso-error" id="dlg-aviso" hidden></div>
+          <div class="campo"><label for="f-razon">Razon social</label>
+            <input type="text" id="f-razon" required minlength="3" maxlength="120"></div>
+          <div class="campo"><label for="f-rut">RUT de la empresa</label>
+            <input type="text" id="f-rut" required placeholder="76543210-9" pattern="\d{7,8}-[\dkK]"></div>
+          <div class="campo"><label for="f-contacto">Persona de contacto</label>
+            <input type="text" id="f-contacto" maxlength="80"></div>
+          <div class="campo"><label for="f-email">Correo de contacto</label>
+            <input type="email" id="f-email"></div>
+          <div class="campo"><label for="f-confianza">Nivel de confianza (1 a 5)</label>
+            <input type="number" id="f-confianza" min="1" max="5" value="3"></div>
+          <footer>
+            <button type="button" class="boton-secundario" id="btn-cancelar">Cancelar</button>
+            <button type="submit">Guardar</button>
+          </footer>
+        </form>
+      </dialog>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/proveedores.js"></script>
+</body>
+</html>

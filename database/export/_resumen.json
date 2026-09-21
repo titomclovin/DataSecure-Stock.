@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-09-09T02:20:41.124Z",
+  "colecciones": [
+    {
+      "coleccion": "usuarios",
+      "documentos": 3
+    },
+    {
+      "coleccion": "categorias",
+      "documentos": 6
+    },
+    {
+      "coleccion": "proveedores",
+      "documentos": 5
+    },
+    {
+      "coleccion": "productos",
+      "documentos": 20
+    },
+    {
+      "coleccion": "movimientos",
+      "documentos": 246
+    },
+    {
+      "coleccion": "logs_operativos",
+      "documentos": 1099
+    },
+    {
+      "coleccion": "alertas_ciberseguridad",
+      "documentos": 3
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "6aa0c250af13d54d2c482cc4",
+    "nombre": "Hector Molina Molina",
+    "email": "admin@tecnosur.cl",
+    "rol": "Administrador",
+    "estado": true,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "creado_en": "2026-09-09T02:20:00.201Z",
+    "actualizado_en": "2026-09-09T02:20:40.949Z",
+    "__v": 0
+  },
+  {
+    "_id": "6aa0c250af13d54d2c482ccd",
+    "nombre": "Camila Ortega Vidal",
+    "email": "operador@tecnosur.cl",
+    "rol": "Operador",
+    "estado": true,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "creado_en": "2026-09-09T02:20:00.266Z",
+    "actualizado_en": "2026-09-09T02:20:00.266Z",
+    "__v": 0
+  },
+  {
+    "_id": "6aa0c250af13d54d2c482cd0",
+    "nombre": "Luis Carrasco Pinto",
+    "email": "bodega2@tecnosur.cl",
+    "rol": "Operador",
+    "estado": true,
+    "intentos_fallidos": 0,
+    "bloqueado_hasta": null,
+    "creado_en": "2026-09-09T02:20:00.332Z",
+    "actualizado_en": "2026-09-09T02:20:00.332Z",
+    "__v": 0
+  }
+]
