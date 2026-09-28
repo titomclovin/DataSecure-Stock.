@@ -1,0 +1,247 @@
+{
+  "fecha": "2026-09-26T22:23:38.730Z",
+  "total": 30,
+  "aprobados": 30,
+  "casos": [
+    {
+      "id": "CP-01",
+      "descripcion": "Autenticación con credenciales válidas de Administrador",
+      "esperado": "HTTP 200 y token JWT emitido",
+      "obtenido": "HTTP 200, rol Administrador, token de 272 caracteres",
+      "estado": "APROBADO",
+      "ms": 87
+    },
+    {
+      "id": "CP-02",
+      "descripcion": "Autenticación con contraseña incorrecta",
+      "esperado": "HTTP 401 y mensaje genérico sin revelar si el correo existe",
+      "obtenido": "HTTP 401, mensaje \"Credenciales incorrectas\"",
+      "estado": "APROBADO",
+      "ms": 63
+    },
+    {
+      "id": "CP-03",
+      "descripcion": "Acceso a un recurso protegido sin token de sesión",
+      "esperado": "HTTP 401 y ningún dato del catálogo en la respuesta",
+      "obtenido": "HTTP 401, error \"Token de sesión ausente\"",
+      "estado": "APROBADO",
+      "ms": 3
+    },
+    {
+      "id": "CP-04",
+      "descripcion": "Token manipulado en la cabecera Authorization",
+      "esperado": "HTTP 401: la firma no es válida y la petición se rechaza",
+      "obtenido": "HTTP 401, error \"Token inválido o expirado\"",
+      "estado": "APROBADO",
+      "ms": 2
+    },
+    {
+      "id": "CP-05",
+      "descripcion": "Inicio de sesión del perfil Operador",
+      "esperado": "HTTP 200 y rol Operador en la carga del token",
+      "obtenido": "HTTP 200, rol Operador",
+      "estado": "APROBADO",
+      "ms": 64
+    },
+    {
+      "id": "CP-06",
+      "descripcion": "El Operador intenta crear un producto (acción reservada al Administrador)",
+      "esperado": "HTTP 403 y el catálogo no cambia",
+      "obtenido": "HTTP 403, total antes 19 y después 19",
+      "estado": "APROBADO",
+      "ms": 16
+    },
+    {
+      "id": "CP-07",
+      "descripcion": "Alta de categoría y de producto por el Administrador",
+      "esperado": "HTTP 201 en ambos y el producto queda vinculado a su categoría",
+      "obtenido": "categoría HTTP 201, producto HTTP 201, SKU IM-7001",
+      "estado": "APROBADO",
+      "ms": 13
+    },
+    {
+      "id": "CP-08",
+      "descripcion": "Validación de entrada: SKU con caracteres no permitidos",
+      "esperado": "HTTP 400 y detalle del campo rechazado",
+      "obtenido": "HTTP 400, campos [{\"campo\":\"sku\",\"detalle\":\"El SKU solo admite letras, números y guion, entre 3 y 20 caracteres\"}]",
+      "estado": "APROBADO",
+      "ms": 6
+    },
+    {
+      "id": "CP-09",
+      "descripcion": "Inyección NoSQL en el formulario de acceso",
+      "esperado": "HTTP 400 o 401: el operador $ne no se interpreta como consulta",
+      "obtenido": "HTTP 400, error \"Datos de entrada no válidos\"",
+      "estado": "APROBADO",
+      "ms": 2
+    },
+    {
+      "id": "CP-10",
+      "descripcion": "Registro de entrada de stock por el Operador",
+      "esperado": "HTTP 201 y el stock del producto sube exactamente la cantidad ingresada",
+      "obtenido": "HTTP 201, stock 12 -> 32",
+      "estado": "APROBADO",
+      "ms": 12
+    },
+    {
+      "id": "CP-11",
+      "descripcion": "Salida de stock mayor a las existencias disponibles",
+      "esperado": "HTTP 409 y el stock permanece sin cambios",
+      "obtenido": "HTTP 409, stock se mantuvo en 32",
+      "estado": "APROBADO",
+      "ms": 11
+    },
+    {
+      "id": "CP-12",
+      "descripcion": "Trazabilidad: cada operación queda en la colección de auditoría",
+      "esperado": "El evento del movimiento aparece en /api/logs con su usuario e IP",
+      "obtenido": "evento \"POST /api/movimientos\" del usuario operador@tecnosur.cl",
+      "estado": "APROBADO",
+      "ms": 411
+    },
+    {
+      "id": "CP-13",
+      "descripcion": "El motor analítico levanta alerta ante intentos de acceso repetidos",
+      "esperado": "Alerta de fuerza bruta registrada tras superar el umbral",
+      "obtenido": "Alta: 8 intentos de acceso fallidos desde ::ffff:127.0.0.1 en 10 minutos",
+      "estado": "APROBADO",
+      "ms": 806
+    },
+    {
+      "id": "CP-14",
+      "descripcion": "Limitación de velocidad en el formulario de acceso",
+      "esperado": "HTTP 429 al superar 5 intentos fallidos en la ventana de 10 minutos",
+      "obtenido": "último intento respondió HTTP 429",
+      "estado": "APROBADO",
+      "ms": 10
+    },
+    {
+      "id": "CP-15",
+      "descripcion": "El Operador no accede al módulo de cuentas de usuario",
+      "esperado": "HTTP 403 y ningún dato de cuentas en la respuesta",
+      "obtenido": "HTTP 403, error \"El rol no tiene permiso sobre este recurso\"",
+      "estado": "APROBADO",
+      "ms": 4
+    },
+    {
+      "id": "CP-16",
+      "descripcion": "Recuperación de credenciales por correo electrónico",
+      "esperado": "HTTP 200 con respuesta idéntica exista o no la cuenta",
+      "obtenido": "HTTP 200 y HTTP 200, mismo mensaje \"Si el correo está registrado, recibirá un enlace de recuperación\"",
+      "estado": "APROBADO",
+      "ms": 6
+    },
+    {
+      "id": "CP-17",
+      "descripcion": "Las contraseñas nunca viajan ni se almacenan en texto plano",
+      "esperado": "El hash bcrypt está en la base y la API no lo devuelve",
+      "obtenido": "hash almacenado $2a$10$... (60 caracteres), la API no expone el campo",
+      "estado": "APROBADO",
+      "ms": 4
+    },
+    {
+      "id": "CP-18",
+      "descripcion": "Cabeceras de seguridad HTTP entregadas por Helmet",
+      "esperado": "Presencia de Content-Security-Policy y ausencia de X-Powered-By",
+      "obtenido": "CSP presente, X-Powered-By ausente, HSTS activo",
+      "estado": "APROBADO",
+      "ms": 0
+    },
+    {
+      "id": "CP-19",
+      "descripcion": "Baja lógica de un producto del catálogo",
+      "esperado": "HTTP 200, el registro conserva su historial y queda marcado como inactivo",
+      "obtenido": "HTTP 200, campo activo = false",
+      "estado": "APROBADO",
+      "ms": 8
+    },
+    {
+      "id": "CP-20",
+      "descripcion": "Panel gerencial calculado con agregaciones sobre la base",
+      "esperado": "Indicadores coherentes con el contenido real de las colecciones",
+      "obtenido": "18 artículos, 860 unidades, 2 bajo mínimo, 56 eventos en 24 h",
+      "estado": "APROBADO",
+      "ms": 11
+    },
+    {
+      "id": "CP-21",
+      "descripcion": "Venta de dos productos desde el carro por el Operador",
+      "esperado": "HTTP 201, folio V correlativo, stock de cada línea descontado exactamente y total igual a neto más IVA",
+      "obtenido": "HTTP 201, folio V-000035, stock AL-3001 71 -> 69 y AL-3003 149 -> 148, total 167970 = neto 141151 + IVA 26819",
+      "estado": "APROBADO",
+      "ms": 29
+    },
+    {
+      "id": "CP-22",
+      "descripcion": "El navegador envía un precio manipulado en una línea del carro",
+      "esperado": "HTTP 201 y el comprobante aplica el precio del catálogo, no el enviado",
+      "obtenido": "HTTP 201, precio enviado 1, precio aplicado 74990 (catálogo 74990)",
+      "estado": "APROBADO",
+      "ms": 7
+    },
+    {
+      "id": "CP-23",
+      "descripcion": "Venta con una línea válida y otra sin stock suficiente",
+      "esperado": "HTTP 409 y ninguna existencia cambia: el carro se aplica completo o no se aplica",
+      "obtenido": "HTTP 409, \"Stock insuficiente: AL-3003 (disponible 148, solicitado 9999)\", stock AL-3001 68 -> 68 y AL-3003 148 -> 148",
+      "estado": "APROBADO",
+      "ms": 21
+    },
+    {
+      "id": "CP-24",
+      "descripcion": "Dos ventas simultáneas compiten por las últimas unidades de un producto",
+      "esperado": "Una se confirma, la otra recibe 409, se revierte su línea ya aplicada y ningún stock queda negativo",
+      "obtenido": "respuestas HTTP 201 y HTTP 409; RE-9901 3 -> 1; AL-3003 148 -> 147 (solo la venta confirmada)",
+      "estado": "APROBADO",
+      "ms": 34
+    },
+    {
+      "id": "CP-25",
+      "descripcion": "Compra a un proveedor desde el carro por el Administrador",
+      "esperado": "HTTP 201, folio C, stock sumado y un movimiento de Entrada enlazado al folio por cada línea",
+      "obtenido": "HTTP 201, folio C-000005, stock AL-3001 68 -> 83, 1 movimiento de Entrada con la observación \"Compra C-000005\"",
+      "estado": "APROBADO",
+      "ms": 17
+    },
+    {
+      "id": "CP-26",
+      "descripcion": "El Operador intenta registrar una compra a proveedor",
+      "esperado": "HTTP 403, el stock no cambia y el motor analítico registra el intento fuera de perfil",
+      "obtenido": "HTTP 403, \"Solo el perfil Administrador registra compras a proveedores\", stock 83 -> 83, alerta: Media Intento de acceso fuera de perfil",
+      "estado": "APROBADO",
+      "ms": 528
+    },
+    {
+      "id": "CP-27",
+      "descripcion": "Venta de un producto dado de baja",
+      "esperado": "HTTP 409: un producto inactivo no se puede vender",
+      "obtenido": "HTTP 409, \"Producto inactivo: no se puede vender hasta reactivarlo (IM-7001)\"",
+      "estado": "APROBADO",
+      "ms": 3
+    },
+    {
+      "id": "CP-28",
+      "descripcion": "Reactivación de un producto dado de baja",
+      "esperado": "HTTP 200, el producto vuelve a estar activo y se puede vender otra vez",
+      "obtenido": "HTTP 200, activo = true; venta posterior HTTP 201 con folio V-000038",
+      "estado": "APROBADO",
+      "ms": 11
+    },
+    {
+      "id": "CP-29",
+      "descripcion": "Trazabilidad de la venta: historial, movimientos, bitácora y panel",
+      "esperado": "La venta aparece en el historial del Operador, sus líneas en movimientos, su evento en la bitácora y en el panel",
+      "obtenido": "folio V-000035 en el historial (21 ventas propias), 2 movimientos de salida, evento \"Venta confirmada V-000035\", panel: 6 ventas por 5405600 en 24 h",
+      "estado": "APROBADO",
+      "ms": 437
+    },
+    {
+      "id": "CP-30",
+      "descripcion": "Validación del carro: sin líneas o con cantidad cero",
+      "esperado": "HTTP 400 con el detalle de los campos rechazados, sin tocar el stock",
+      "obtenido": "carro vacío HTTP 400, cantidad cero HTTP 400: [\"La cantidad debe ser un entero entre 1 y 10000\"]",
+      "estado": "APROBADO",
+      "ms": 5
+    }
+  ]
+}

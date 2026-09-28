@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "6ab845f43b521724d037e82e",
+    "tipo_amenaza": "Fuerza bruta sobre credenciales",
+    "severidad": "Alta",
+    "descripcion": "7 intentos de acceso fallidos desde 45.190.22.114 en 10 minutos",
+    "ip_origen": "45.190.22.114",
+    "id_usuario": null,
+    "evidencia": {
+      "intentos": 7,
+      "cuentas_probadas": [
+        "admin@tecnosur.cl",
+        "root@tecnosur.cl"
+      ],
+      "ventana_min": 10
+    },
+    "resuelta": false,
+    "fecha_deteccion": "2026-09-23T22:23:48.963Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e82f",
+    "tipo_amenaza": "Intento de acceso fuera de perfil",
+    "severidad": "Media",
+    "descripcion": "El usuario bodega2@tecnosur.cl intentó operar sobre /api/usuarios sin privilegios para ese recurso",
+    "ip_origen": "190.15.34.20",
+    "id_usuario": "6ab845f43b521724d037e278",
+    "evidencia": {
+      "recurso": "/api/usuarios",
+      "metodo": "GET"
+    },
+    "resuelta": true,
+    "fecha_deteccion": "2026-09-20T22:23:48.963Z"
+  },
+  {
+    "_id": "6ab845f53b521724d037e88c",
+    "tipo_amenaza": "Intento de acceso fuera de perfil",
+    "severidad": "Media",
+    "descripcion": "El usuario operador@tecnosur.cl intentó operar sobre /api/transacciones sin privilegios para ese recurso",
+    "ip_origen": "::ffff:127.0.0.1",
+    "id_usuario": "6ab845f43b521724d037e276",
+    "evidencia": {
+      "recurso": "/api/transacciones",
+      "metodo": "POST"
+    },
+    "resuelta": false,
+    "fecha_deteccion": "2026-09-26T22:23:49.188Z"
+  },
+  {
+    "_id": "6ab8461f3b521724d037ea6f",
+    "tipo_amenaza": "Fuerza bruta sobre credenciales",
+    "severidad": "Alta",
+    "descripcion": "9 intentos de acceso fallidos desde ::ffff:127.0.0.1 en 10 minutos",
+    "ip_origen": "::ffff:127.0.0.1",
+    "id_usuario": null,
+    "evidencia": {
+      "intentos": 9,
+      "cuentas_probadas": [
+        "admin@tecnosur.cl",
+        "root@tecnosur.cl",
+        "entrada no textual"
+      ],
+      "ventana_min": 10
+    },
+    "resuelta": false,
+    "fecha_deteccion": "2026-09-26T22:24:33.386Z"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "6ab845f43b521724d037e281",
+    "razon_social": "Importadora Andes Tech SpA",
+    "rut_empresa": "76543210-9",
+    "contacto": "Marcela Fuentes",
+    "email_contacto": "compras@andestech.cl",
+    "nivel_confianza": 5,
+    "activo": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.642Z",
+    "actualizado_en": "2026-09-26T22:23:48.642Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e282",
+    "razon_social": "Distribuidora Pacífico Digital Ltda.",
+    "rut_empresa": "77891234-5",
+    "contacto": "Rodrigo Salas",
+    "email_contacto": "ventas@pacificodigital.cl",
+    "nivel_confianza": 4,
+    "activo": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.642Z",
+    "actualizado_en": "2026-09-26T22:23:48.642Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e283",
+    "razon_social": "Comercial Nexus Chile SpA",
+    "rut_empresa": "78123456-7",
+    "contacto": "Carla Bravo",
+    "email_contacto": "contacto@nexuschile.cl",
+    "nivel_confianza": 4,
+    "activo": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.642Z",
+    "actualizado_en": "2026-09-26T22:23:48.642Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e284",
+    "razon_social": "Mayorista Sur Informática Ltda.",
+    "rut_empresa": "76998877-1",
+    "contacto": "Ignacio Reyes",
+    "email_contacto": "pedidos@surinformatica.cl",
+    "nivel_confianza": 3,
+    "activo": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.642Z",
+    "actualizado_en": "2026-09-26T22:23:48.642Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e285",
+    "razon_social": "Global Hardware Import SpA",
+    "rut_empresa": "79456123-K",
+    "contacto": "Paula Moreno",
+    "email_contacto": "import@globalhardware.cl",
+    "nivel_confianza": 3,
+    "activo": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.642Z",
+    "actualizado_en": "2026-09-26T22:23:48.642Z"
+  }
+]

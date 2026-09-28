@@ -1,0 +1,1730 @@
+[
+  {
+    "_id": "6ab845f43b521724d037e2ee",
+    "folio": "V-000001",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28a",
+        "sku": "PE-2001",
+        "nombre": "Teclado mecánico retroiluminado",
+        "cantidad": 3,
+        "precio_unitario": 49990,
+        "subtotal": 149970,
+        "stock_resultante": 83
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e295",
+        "sku": "CO-5002",
+        "nombre": "Memoria RAM DDR5 16 GB",
+        "cantidad": 2,
+        "precio_unitario": 69990,
+        "subtotal": 139980,
+        "stock_resultante": 71
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 243655,
+    "iva": 46295,
+    "total": 289950,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-08-29T20:07:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e2f7",
+    "folio": "V-000002",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 2,
+        "precio_unitario": 259990,
+        "subtotal": 519980,
+        "stock_resultante": 7
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 436958,
+    "iva": 83022,
+    "total": 519980,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-08-29T21:54:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e301",
+    "folio": "C-000001",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 17,
+        "precio_unitario": 187190,
+        "subtotal": 3182230,
+        "stock_resultante": 24
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 11,
+        "precio_unitario": 100790,
+        "subtotal": 1108690,
+        "stock_resultante": 27
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e295",
+        "sku": "CO-5002",
+        "nombre": "Memoria RAM DDR5 16 GB",
+        "cantidad": 11,
+        "precio_unitario": 50390,
+        "subtotal": 554290,
+        "stock_resultante": 82
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e285",
+    "razon_social": "Global Hardware Import SpA",
+    "unidades": 39,
+    "neto": 4071605,
+    "iva": 773605,
+    "total": 4845210,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 97181",
+    "fecha_timestamp": "2026-08-30T13:16:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e30b",
+    "folio": "V-000003",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28a",
+        "sku": "PE-2001",
+        "nombre": "Teclado mecánico retroiluminado",
+        "cantidad": 3,
+        "precio_unitario": 49990,
+        "subtotal": 149970,
+        "stock_resultante": 80
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 3,
+    "neto": 126025,
+    "iva": 23945,
+    "total": 149970,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-08-30T20:21:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e313",
+    "folio": "V-000004",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28c",
+        "sku": "PE-2003",
+        "nombre": "Audífonos con cancelación de ruido",
+        "cantidad": 2,
+        "precio_unitario": 89990,
+        "subtotal": 179980,
+        "stock_resultante": 41
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 151244,
+    "iva": 28736,
+    "total": 179980,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-08-31T19:56:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e31d",
+    "folio": "V-000005",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 2,
+        "precio_unitario": 649990,
+        "subtotal": 1299980,
+        "stock_resultante": 32
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e297",
+        "sku": "MO-6001",
+        "nombre": "Monitor 24 pulgadas IPS 75 Hz",
+        "cantidad": 1,
+        "precio_unitario": 129990,
+        "subtotal": 129990,
+        "stock_resultante": 40
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 2,
+        "precio_unitario": 94990,
+        "subtotal": 189980,
+        "stock_resultante": 37
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 1361303,
+    "iva": 258647,
+    "total": 1619950,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-02T16:54:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e328",
+    "folio": "V-000006",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 1,
+        "precio_unitario": 89990,
+        "subtotal": 89990,
+        "stock_resultante": 21
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e288",
+        "sku": "NB-1002",
+        "nombre": "Notebook 15 pulgadas Ryzen 7 16GB",
+        "cantidad": 3,
+        "precio_unitario": 729990,
+        "subtotal": 2189970,
+        "stock_resultante": 18
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 4,
+    "neto": 1915933,
+    "iva": 364027,
+    "total": 2279960,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-02T22:38:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e332",
+    "folio": "V-000007",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e290",
+        "sku": "AL-3003",
+        "nombre": "Pendrive USB 3.2 de 256 GB",
+        "cantidad": 3,
+        "precio_unitario": 17990,
+        "subtotal": 53970,
+        "stock_resultante": 149
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e294",
+        "sku": "CO-5001",
+        "nombre": "Tarjeta de video 8 GB GDDR6",
+        "cantidad": 1,
+        "precio_unitario": 469990,
+        "subtotal": 469990,
+        "stock_resultante": 13
+      }
+    ],
+    "cliente": {
+      "nombre": "Colegio San Esteban",
+      "rut": "65098114-6"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 4,
+    "neto": 440303,
+    "iva": 83657,
+    "total": 523960,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-03T16:33:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e33b",
+    "folio": "V-000008",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 1,
+        "precio_unitario": 94990,
+        "subtotal": 94990,
+        "stock_resultante": 36
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 1,
+    "neto": 79824,
+    "iva": 15166,
+    "total": 94990,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-05T18:18:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e345",
+    "folio": "C-000002",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28c",
+        "sku": "PE-2003",
+        "nombre": "Audífonos con cancelación de ruido",
+        "cantidad": 13,
+        "precio_unitario": 64790,
+        "subtotal": 842270,
+        "stock_resultante": 54
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 11,
+        "precio_unitario": 28790,
+        "subtotal": 316690,
+        "stock_resultante": 68
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 17,
+        "precio_unitario": 86390,
+        "subtotal": 1468630,
+        "stock_resultante": 44
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e283",
+    "razon_social": "Comercial Nexus Chile SpA",
+    "unidades": 41,
+    "neto": 2208059,
+    "iva": 419531,
+    "total": 2627590,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 28569",
+    "fecha_timestamp": "2026-09-06T13:07:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e351",
+    "folio": "V-000009",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 3,
+        "precio_unitario": 259990,
+        "subtotal": 779970,
+        "stock_resultante": 21
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 3,
+        "precio_unitario": 24990,
+        "subtotal": 74970,
+        "stock_resultante": 121
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28a",
+        "sku": "PE-2001",
+        "nombre": "Teclado mecánico retroiluminado",
+        "cantidad": 1,
+        "precio_unitario": 49990,
+        "subtotal": 49990,
+        "stock_resultante": 79
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 7,
+    "neto": 760445,
+    "iva": 144485,
+    "total": 904930,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-07T17:02:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e35c",
+    "folio": "V-000010",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e289",
+        "sku": "NB-1003",
+        "nombre": "Notebook empresarial 13 pulgadas Core i7",
+        "cantidad": 3,
+        "precio_unitario": 989990,
+        "subtotal": 2969970,
+        "stock_resultante": 9
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 1,
+        "precio_unitario": 89990,
+        "subtotal": 89990,
+        "stock_resultante": 20
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 4,
+    "neto": 2571395,
+    "iva": 488565,
+    "total": 3059960,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-09T17:27:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e365",
+    "folio": "V-000011",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 1,
+        "precio_unitario": 89990,
+        "subtotal": 89990,
+        "stock_resultante": 19
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 1,
+    "neto": 75622,
+    "iva": 14368,
+    "total": 89990,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-09T19:41:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e36e",
+    "folio": "V-000012",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 1,
+        "precio_unitario": 119990,
+        "subtotal": 119990,
+        "stock_resultante": 43
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 3,
+        "precio_unitario": 139990,
+        "subtotal": 419970,
+        "stock_resultante": 24
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 4,
+    "neto": 453748,
+    "iva": 86212,
+    "total": 539960,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-10T15:21:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e377",
+    "folio": "V-000013",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 3,
+        "precio_unitario": 24990,
+        "subtotal": 74970,
+        "stock_resultante": 118
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 3,
+    "neto": 63000,
+    "iva": 11970,
+    "total": 74970,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-11T22:41:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e381",
+    "folio": "V-000014",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e288",
+        "sku": "NB-1002",
+        "nombre": "Notebook 15 pulgadas Ryzen 7 16GB",
+        "cantidad": 2,
+        "precio_unitario": 729990,
+        "subtotal": 1459980,
+        "stock_resultante": 16
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 3,
+        "precio_unitario": 94990,
+        "subtotal": 284970,
+        "stock_resultante": 33
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 3,
+        "precio_unitario": 119990,
+        "subtotal": 359970,
+        "stock_resultante": 40
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 8,
+    "neto": 1768840,
+    "iva": 336080,
+    "total": 2104920,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-12T17:20:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e38d",
+    "folio": "C-000003",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 18,
+        "precio_unitario": 467990,
+        "subtotal": 8423820,
+        "stock_resultante": 50
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e288",
+        "sku": "NB-1002",
+        "nombre": "Notebook 15 pulgadas Ryzen 7 16GB",
+        "cantidad": 8,
+        "precio_unitario": 525590,
+        "subtotal": 4204720,
+        "stock_resultante": 24
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 13,
+        "precio_unitario": 53990,
+        "subtotal": 701870,
+        "stock_resultante": 81
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e281",
+    "razon_social": "Importadora Andes Tech SpA",
+    "unidades": 39,
+    "neto": 11202025,
+    "iva": 2128385,
+    "total": 13330410,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 79372",
+    "fecha_timestamp": "2026-09-13T13:07:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e398",
+    "folio": "V-000015",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 2,
+        "precio_unitario": 24990,
+        "subtotal": 49980,
+        "stock_resultante": 116
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 3,
+        "precio_unitario": 39990,
+        "subtotal": 119970,
+        "stock_resultante": 65
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 142815,
+    "iva": 27135,
+    "total": 169950,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-13T18:42:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3a3",
+    "folio": "V-000016",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 3,
+        "precio_unitario": 139990,
+        "subtotal": 419970,
+        "stock_resultante": 21
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e298",
+        "sku": "MO-6002",
+        "nombre": "Monitor 27 pulgadas QHD 144 Hz",
+        "cantidad": 1,
+        "precio_unitario": 279990,
+        "subtotal": 279990,
+        "stock_resultante": 17
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 2,
+        "precio_unitario": 119990,
+        "subtotal": 239980,
+        "stock_resultante": 38
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 789866,
+    "iva": 150074,
+    "total": 939940,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-14T15:16:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3af",
+    "folio": "V-000017",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 1,
+        "precio_unitario": 649990,
+        "subtotal": 649990,
+        "stock_resultante": 49
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 1,
+        "precio_unitario": 24990,
+        "subtotal": 24990,
+        "stock_resultante": 115
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 3,
+        "precio_unitario": 89990,
+        "subtotal": 269970,
+        "stock_resultante": 16
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 794076,
+    "iva": 150874,
+    "total": 944950,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-14T16:34:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3bb",
+    "folio": "V-000018",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 1,
+        "precio_unitario": 139990,
+        "subtotal": 139990,
+        "stock_resultante": 20
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 2,
+        "precio_unitario": 649990,
+        "subtotal": 1299980,
+        "stock_resultante": 47
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 3,
+        "precio_unitario": 259990,
+        "subtotal": 779970,
+        "stock_resultante": 18
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 1865496,
+    "iva": 354444,
+    "total": 2219940,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-15T15:01:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3c5",
+    "folio": "V-000019",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 2,
+        "precio_unitario": 139990,
+        "subtotal": 279980,
+        "stock_resultante": 18
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 235277,
+    "iva": 44703,
+    "total": 279980,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-16T15:45:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3cf",
+    "folio": "V-000020",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e289",
+        "sku": "NB-1003",
+        "nombre": "Notebook empresarial 13 pulgadas Core i7",
+        "cantidad": 1,
+        "precio_unitario": 989990,
+        "subtotal": 989990,
+        "stock_resultante": 8
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e294",
+        "sku": "CO-5001",
+        "nombre": "Tarjeta de video 8 GB GDDR6",
+        "cantidad": 3,
+        "precio_unitario": 469990,
+        "subtotal": 1409970,
+        "stock_resultante": 10
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 2,
+        "precio_unitario": 649990,
+        "subtotal": 1299980,
+        "stock_resultante": 45
+      }
+    ],
+    "cliente": {
+      "nombre": "Colegio San Esteban",
+      "rut": "65098114-6"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 3109193,
+    "iva": 590747,
+    "total": 3699940,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-16T21:55:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3db",
+    "folio": "V-000021",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 3,
+        "precio_unitario": 94990,
+        "subtotal": 284970,
+        "stock_resultante": 30
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 3,
+        "precio_unitario": 89990,
+        "subtotal": 269970,
+        "stock_resultante": 13
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 1,
+        "precio_unitario": 39990,
+        "subtotal": 39990,
+        "stock_resultante": 64
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 7,
+    "neto": 499941,
+    "iva": 94989,
+    "total": 594930,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-17T19:55:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3e5",
+    "folio": "V-000022",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e297",
+        "sku": "MO-6001",
+        "nombre": "Monitor 24 pulgadas IPS 75 Hz",
+        "cantidad": 1,
+        "precio_unitario": 129990,
+        "subtotal": 129990,
+        "stock_resultante": 39
+      }
+    ],
+    "cliente": {
+      "nombre": "Colegio San Esteban",
+      "rut": "65098114-6"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 1,
+    "neto": 109235,
+    "iva": 20755,
+    "total": 129990,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-17T20:51:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3ee",
+    "folio": "V-000023",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28a",
+        "sku": "PE-2001",
+        "nombre": "Teclado mecánico retroiluminado",
+        "cantidad": 3,
+        "precio_unitario": 49990,
+        "subtotal": 149970,
+        "stock_resultante": 76
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 1,
+        "precio_unitario": 89990,
+        "subtotal": 89990,
+        "stock_resultante": 12
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 4,
+    "neto": 201647,
+    "iva": 38313,
+    "total": 239960,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-18T20:04:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e3f9",
+    "folio": "V-000024",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e298",
+        "sku": "MO-6002",
+        "nombre": "Monitor 27 pulgadas QHD 144 Hz",
+        "cantidad": 1,
+        "precio_unitario": 279990,
+        "subtotal": 279990,
+        "stock_resultante": 16
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 3,
+        "precio_unitario": 74990,
+        "subtotal": 224970,
+        "stock_resultante": 78
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 2,
+        "precio_unitario": 94990,
+        "subtotal": 189980,
+        "stock_resultante": 28
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 583983,
+    "iva": 110957,
+    "total": 694940,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-18T20:24:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e405",
+    "folio": "C-000004",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28c",
+        "sku": "PE-2003",
+        "nombre": "Audífonos con cancelación de ruido",
+        "cantidad": 20,
+        "precio_unitario": 64790,
+        "subtotal": 1295800,
+        "stock_resultante": 74
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 12,
+        "precio_unitario": 28790,
+        "subtotal": 345480,
+        "stock_resultante": 76
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 16,
+        "precio_unitario": 86390,
+        "subtotal": 1382240,
+        "stock_resultante": 54
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e283",
+    "razon_social": "Comercial Nexus Chile SpA",
+    "unidades": 48,
+    "neto": 2540773,
+    "iva": 482747,
+    "total": 3023520,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 12530",
+    "fecha_timestamp": "2026-09-20T13:43:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e40f",
+    "folio": "V-000025",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e295",
+        "sku": "CO-5002",
+        "nombre": "Memoria RAM DDR5 16 GB",
+        "cantidad": 1,
+        "precio_unitario": 69990,
+        "subtotal": 69990,
+        "stock_resultante": 81
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 1,
+    "neto": 58815,
+    "iva": 11175,
+    "total": 69990,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-20T15:23:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e417",
+    "folio": "V-000026",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 2,
+        "precio_unitario": 259990,
+        "subtotal": 519980,
+        "stock_resultante": 16
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 436958,
+    "iva": 83022,
+    "total": 519980,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-20T22:33:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e421",
+    "folio": "V-000027",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 3,
+        "precio_unitario": 74990,
+        "subtotal": 224970,
+        "stock_resultante": 75
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 2,
+        "precio_unitario": 39990,
+        "subtotal": 79980,
+        "stock_resultante": 74
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e298",
+        "sku": "MO-6002",
+        "nombre": "Monitor 27 pulgadas QHD 144 Hz",
+        "cantidad": 1,
+        "precio_unitario": 279990,
+        "subtotal": 279990,
+        "stock_resultante": 15
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 491546,
+    "iva": 93394,
+    "total": 584940,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-22T19:29:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e42d",
+    "folio": "V-000028",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 2,
+        "precio_unitario": 259990,
+        "subtotal": 519980,
+        "stock_resultante": 14
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e298",
+        "sku": "MO-6002",
+        "nombre": "Monitor 27 pulgadas QHD 144 Hz",
+        "cantidad": 2,
+        "precio_unitario": 279990,
+        "subtotal": 559980,
+        "stock_resultante": 13
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 1,
+        "precio_unitario": 94990,
+        "subtotal": 94990,
+        "stock_resultante": 27
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 987353,
+    "iva": 187597,
+    "total": 1174950,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-22T22:19:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e439",
+    "folio": "V-000029",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 1,
+        "precio_unitario": 89990,
+        "subtotal": 89990,
+        "stock_resultante": 11
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e291",
+        "sku": "RE-4001",
+        "nombre": "Router WiFi 6 doble banda",
+        "cantidad": 2,
+        "precio_unitario": 119990,
+        "subtotal": 239980,
+        "stock_resultante": 52
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 2,
+        "precio_unitario": 74990,
+        "subtotal": 149980,
+        "stock_resultante": 73
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 403319,
+    "iva": 76631,
+    "total": 479950,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-23T15:16:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e445",
+    "folio": "V-000030",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e292",
+        "sku": "RE-4002",
+        "nombre": "Switch administrable 24 puertos",
+        "cantidad": 3,
+        "precio_unitario": 259990,
+        "subtotal": 779970,
+        "stock_resultante": 11
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28c",
+        "sku": "PE-2003",
+        "nombre": "Audífonos con cancelación de ruido",
+        "cantidad": 3,
+        "precio_unitario": 89990,
+        "subtotal": 269970,
+        "stock_resultante": 71
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 1,
+        "precio_unitario": 24990,
+        "subtotal": 24990,
+        "stock_resultante": 114
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 7,
+    "neto": 903303,
+    "iva": 171627,
+    "total": 1074930,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-23T19:20:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e44f",
+    "folio": "V-000031",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 2,
+        "precio_unitario": 74990,
+        "subtotal": 149980,
+        "stock_resultante": 71
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 126034,
+    "iva": 23946,
+    "total": 149980,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-24T19:54:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e457",
+    "folio": "V-000032",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e294",
+        "sku": "CO-5001",
+        "nombre": "Tarjeta de video 8 GB GDDR6",
+        "cantidad": 2,
+        "precio_unitario": 469990,
+        "subtotal": 939980,
+        "stock_resultante": 8
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 789899,
+    "iva": 150081,
+    "total": 939980,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-24T21:32:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e45f",
+    "folio": "V-000033",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e294",
+        "sku": "CO-5001",
+        "nombre": "Tarjeta de video 8 GB GDDR6",
+        "cantidad": 5,
+        "precio_unitario": 469990,
+        "subtotal": 2349950,
+        "stock_resultante": 3
+      }
+    ],
+    "cliente": {
+      "nombre": "Soluciones Informáticas Pudahuel SpA",
+      "rut": "77105662-8"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 5,
+    "neto": 1974748,
+    "iva": 375202,
+    "total": 2349950,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "Orden de compra del cliente N.º 4518",
+    "fecha_timestamp": "2026-09-25T23:56:00.000Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e467",
+    "folio": "V-000034",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 27,
+        "precio_unitario": 94990,
+        "subtotal": 2564730,
+        "stock_resultante": 0
+      }
+    ],
+    "cliente": {
+      "nombre": "Colegio San Esteban",
+      "rut": "65098114-6"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 27,
+    "neto": 2155235,
+    "iva": 409495,
+    "total": 2564730,
+    "id_usuario": "6ab845f43b521724d037e278",
+    "observacion": "Respaldo de los laboratorios de computación",
+    "fecha_timestamp": "2026-09-26T14:07:00.000Z"
+  },
+  {
+    "_id": "6ab845f53b521724d037e86f",
+    "folio": "V-000035",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e288",
+        "sku": "NB-1002",
+        "nombre": "Notebook 15 pulgadas Ryzen 7 16GB",
+        "cantidad": 1,
+        "precio_unitario": 729990,
+        "subtotal": 729990,
+        "stock_resultante": 23
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28c",
+        "sku": "PE-2003",
+        "nombre": "Audífonos con cancelación de ruido",
+        "cantidad": 2,
+        "precio_unitario": 89990,
+        "subtotal": 179980,
+        "stock_resultante": 69
+      }
+    ],
+    "cliente": {
+      "nombre": "Comercial Los Aromos Ltda.",
+      "rut": "76412338-7"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 3,
+    "neto": 764681,
+    "iva": 145289,
+    "total": 909970,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "Orden de compra del cliente N.º 2231",
+    "fecha_timestamp": "2026-09-26T22:23:49.168Z"
+  },
+  {
+    "_id": "6ab845f53b521724d037e87b",
+    "folio": "V-000036",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 1,
+        "precio_unitario": 24990,
+        "subtotal": 24990,
+        "stock_resultante": 113
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 1,
+    "neto": 21000,
+    "iva": 3990,
+    "total": 24990,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-26T22:23:49.177Z"
+  },
+  {
+    "_id": "6ab845f53b521724d037e893",
+    "folio": "C-000005",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e287",
+        "sku": "NB-1001",
+        "nombre": "Notebook 14 pulgadas Core i5 16GB",
+        "cantidad": 6,
+        "precio_unitario": 467990,
+        "subtotal": 2807940,
+        "stock_resultante": 51
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 10,
+        "precio_unitario": 53990,
+        "subtotal": 539900,
+        "stock_resultante": 81
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e281",
+    "razon_social": "Importadora Andes Tech SpA",
+    "unidades": 16,
+    "neto": 2813311,
+    "iva": 534529,
+    "total": 3347840,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 48811",
+    "fecha_timestamp": "2026-09-26T22:23:49.189Z"
+  },
+  {
+    "_id": "6ab846033b521724d037e91c",
+    "folio": "V-000037",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e297",
+        "sku": "MO-6001",
+        "nombre": "Monitor 24 pulgadas IPS 75 Hz",
+        "cantidad": 2,
+        "precio_unitario": 129990,
+        "subtotal": 259980,
+        "stock_resultante": 37
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28e",
+        "sku": "AL-3001",
+        "nombre": "Disco sólido NVMe 1 TB",
+        "cantidad": 1,
+        "precio_unitario": 74990,
+        "subtotal": 74990,
+        "stock_resultante": 80
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28b",
+        "sku": "PE-2002",
+        "nombre": "Mouse inalámbrico ergonómico",
+        "cantidad": 3,
+        "precio_unitario": 24990,
+        "subtotal": 74970,
+        "stock_resultante": 110
+      }
+    ],
+    "cliente": {
+      "nombre": "Estudio Contable Brito y Asociados",
+      "rut": "76990215-5"
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 6,
+    "neto": 344487,
+    "iva": 65453,
+    "total": 409940,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Orden de compra del cliente N.º 1187",
+    "fecha_timestamp": "2026-09-26T22:24:03.152Z"
+  },
+  {
+    "_id": "6ab846073b521724d037e94c",
+    "folio": "C-000006",
+    "tipo": "Compra",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28f",
+        "sku": "AL-3002",
+        "nombre": "Disco duro externo 4 TB",
+        "cantidad": 20,
+        "precio_unitario": 68390,
+        "subtotal": 1367800,
+        "stock_resultante": 20
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e296",
+        "sku": "CO-5003",
+        "nombre": "Fuente de poder 750W certificada",
+        "cantidad": 8,
+        "precio_unitario": 64790,
+        "subtotal": 518320,
+        "stock_resultante": 19
+      }
+    ],
+    "cliente": {
+      "nombre": "",
+      "rut": ""
+    },
+    "id_proveedor": "6ab845f43b521724d037e284",
+    "razon_social": "Mayorista Sur Informática Ltda.",
+    "unidades": 28,
+    "neto": 1584975,
+    "iva": 301145,
+    "total": 1886120,
+    "id_usuario": "6ab845f43b521724d037e274",
+    "observacion": "Factura de proveedor N.º 55120",
+    "fecha_timestamp": "2026-09-26T22:24:07.251Z"
+  },
+  {
+    "_id": "6ab8460d3b521724d037e9a4",
+    "folio": "V-000038",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e293",
+        "sku": "RE-4003",
+        "nombre": "Punto de acceso PoE para interiores",
+        "cantidad": 2,
+        "precio_unitario": 139990,
+        "subtotal": 279980,
+        "stock_resultante": 16
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 2,
+    "neto": 235277,
+    "iva": 44703,
+    "total": 279980,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-26T22:24:13.519Z"
+  },
+  {
+    "_id": "6ab846123b521724d037e9e1",
+    "folio": "V-000039",
+    "tipo": "Venta",
+    "detalle": [
+      {
+        "id_producto": "6ab845f43b521724d037e28a",
+        "sku": "PE-2001",
+        "nombre": "Teclado mecánico retroiluminado",
+        "cantidad": 2,
+        "precio_unitario": 49990,
+        "subtotal": 99980,
+        "stock_resultante": 74
+      },
+      {
+        "id_producto": "6ab845f43b521724d037e28d",
+        "sku": "PE-2004",
+        "nombre": "Cámara web full HD con obturador",
+        "cantidad": 1,
+        "precio_unitario": 39990,
+        "subtotal": 39990,
+        "stock_resultante": 73
+      }
+    ],
+    "cliente": {
+      "nombre": "Cliente sin identificar",
+      "rut": ""
+    },
+    "id_proveedor": null,
+    "razon_social": "",
+    "unidades": 3,
+    "neto": 117622,
+    "iva": 22348,
+    "total": 139970,
+    "id_usuario": "6ab845f43b521724d037e276",
+    "observacion": "",
+    "fecha_timestamp": "2026-09-26T22:24:18.500Z"
+  }
+]

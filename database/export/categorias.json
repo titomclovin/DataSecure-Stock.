@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "6ab845f43b521724d037e27a",
+    "nombre_categoria": "Notebooks",
+    "descripcion": "Equipos portátiles de uso corporativo y doméstico",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e27b",
+    "nombre_categoria": "Periféricos",
+    "descripcion": "Teclados, mouse, audífonos y accesorios de escritorio",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e27c",
+    "nombre_categoria": "Almacenamiento",
+    "descripcion": "Discos sólidos, discos mecánicos y unidades externas",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e27d",
+    "nombre_categoria": "Redes",
+    "descripcion": "Routers, switches, puntos de acceso y cableado estructurado",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e27e",
+    "nombre_categoria": "Componentes",
+    "descripcion": "Tarjetas de video, memorias RAM y fuentes de poder",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  },
+  {
+    "_id": "6ab845f43b521724d037e27f",
+    "nombre_categoria": "Monitores",
+    "descripcion": "Pantallas LED e IPS para estaciones de trabajo",
+    "activa": true,
+    "__v": 0,
+    "creado_en": "2026-09-26T22:23:48.637Z",
+    "actualizado_en": "2026-09-26T22:23:48.637Z"
+  }
+]

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carro de compra y venta | DataSecure Stock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="disposicion">
+    <header class="barra-superior"></header>
+    <nav class="menu-lateral" aria-label="Menú principal"></nav>
+    <main class="contenido">
+      <h2>Carro de compra y venta</h2>
+      <p class="bajada">Agregue artículos, revise el total con IVA y confirme: el stock, el historial de movimientos y la auditoría se actualizan en la misma operación.</p>
+      <div class="aviso" id="aviso" hidden></div>
+
+      <div class="rejilla-carro">
+        <section class="panel" aria-labelledby="titulo-catalogo">
+          <h3 id="titulo-catalogo">Artículos del catálogo</h3>
+          <div class="barra-acciones">
+            <div class="campo">
+              <label for="c-buscar">Buscar por nombre</label>
+              <input type="search" id="c-buscar" placeholder="Notebook, disco, monitor...">
+            </div>
+          </div>
+          <div class="tabla-envoltura">
+            <table class="tabla-catalogo">
+              <thead>
+                <tr><th>SKU</th><th>Producto</th><th class="numero">Stock</th>
+                    <th class="numero">Precio</th><th>Estado</th><th></th></tr>
+              </thead>
+              <tbody id="tb-catalogo"></tbody>
+            </table>
+          </div>
+          <p class="vacio" id="c-paginacion"></p>
+        </section>
+
+        <section class="panel panel-carro" aria-labelledby="titulo-carro">
+          <div class="cabecera-carro">
+            <h3 id="titulo-carro">Carro <span class="contador-carro" id="contador">0</span></h3>
+            <div class="selector-modo" role="group" aria-label="Tipo de operación">
+              <button type="button" class="modo" data-modo="Venta" id="modo-venta">Venta</button>
+              <button type="button" class="modo" data-modo="Compra" id="modo-compra">Compra a proveedor</button>
+            </div>
+          </div>
+          <div class="tabla-envoltura">
+            <table class="tabla-carro">
+              <thead>
+                <tr><th>Producto</th><th class="numero">Cantidad</th>
+                    <th class="numero" id="th-unitario">Precio unit.</th><th class="numero">Subtotal</th><th></th></tr>
+              </thead>
+              <tbody id="tb-carro"></tbody>
+            </table>
+          </div>
+
+          <form id="form-carro" novalidate>
+            <div class="grupo-campos" id="campos-venta">
+              <div class="campo"><label for="c-cliente">Cliente</label>
+                <input type="text" id="c-cliente" maxlength="80" placeholder="Nombre o razón social (opcional)"></div>
+              <div class="campo"><label for="c-rut">RUT del cliente</label>
+                <input type="text" id="c-rut" maxlength="10" placeholder="76543210-9 (opcional)"></div>
+            </div>
+            <div class="grupo-campos" id="campos-compra" hidden>
+              <div class="campo"><label for="c-proveedor">Proveedor</label>
+                <select id="c-proveedor"></select></div>
+            </div>
+            <div class="campo"><label for="c-obs">Observación</label>
+              <input type="text" id="c-obs" maxlength="240" placeholder="N.º de orden o de factura (opcional)"></div>
+
+            <dl class="totales">
+              <div><dt>Unidades</dt><dd id="t-unidades">0</dd></div>
+              <div><dt>Neto</dt><dd id="t-neto">$0</dd></div>
+              <div><dt>IVA 19 %</dt><dd id="t-iva">$0</dd></div>
+              <div class="total"><dt>Total</dt><dd id="t-total">$0</dd></div>
+            </dl>
+            <p class="pie-carro" id="pie-carro">Precios con IVA incluido. En la venta el precio lo fija el catálogo al confirmar.</p>
+            <div class="acciones-carro">
+              <button type="button" class="boton-secundario" id="btn-vaciar">Vaciar carro</button>
+              <button type="submit" id="btn-confirmar">Confirmar venta</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <section class="panel" aria-labelledby="titulo-historial">
+        <h3 id="titulo-historial">Historial de ventas y compras</h3>
+        <div class="barra-acciones">
+          <div class="campo"><label for="h-tipo">Filtrar por operación</label>
+            <select id="h-tipo">
+              <option value="">Todas</option><option value="Venta">Ventas</option><option value="Compra">Compras</option>
+            </select></div>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead>
+              <tr><th>Folio</th><th>Fecha</th><th>Operación</th><th>Cliente o proveedor</th>
+                  <th class="numero">Unidades</th><th class="numero">Total</th><th>Responsable</th><th></th></tr>
+            </thead>
+            <tbody id="tb-historial"></tbody>
+          </table>
+        </div>
+        <p class="vacio" id="h-paginacion"></p>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="dlg-comprobante" class="dialogo-ancho" aria-labelledby="comp-titulo">
+    <header id="comp-titulo">Comprobante</header>
+    <div class="comprobante" id="comprobante"></div>
+    <footer class="pie-dialogo">
+      <button type="button" class="boton-secundario" id="btn-imprimir">Imprimir</button>
+      <button type="button" id="btn-cerrar-comp">Cerrar</button>
+    </footer>
+  </dialog>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/carro.js"></script>
+</body>
+</html>
